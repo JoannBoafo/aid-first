@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Topics - AidFirst</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plus-circle"></i>
+                <span>AidFirst</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topics.html" class="active">Topics</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>First Aid Topics</h1>
+            <p>Comprehensive guides for emergency response situations</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search first aid topics...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Topics</button>
+                    <button class="filter-btn" data-category="breathing">Breathing</button>
+                    <button class="filter-btn" data-category="wounds">Wounds</button>
+                    <button class="filter-btn" data-category="emergency">Emergency</button>
+                    <button class="filter-btn" data-category="injuries">Injuries</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Grid -->
+    <section class="topics-section">
+        <div class="container">
+            <div class="topics-grid" id="topicsGrid">
+                <!-- CPR Topic -->
+                <div class="topic-card" data-category="breathing emergency">
+                    <div class="card-image">
+                        <img src="images/CPR.jpg" alt="CPR first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>CPR (Cardiopulmonary Resuscitation)</h3>
+                        <p>Life-saving technique for cardiac arrest and breathing emergencies</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 2-5 minutes</span>
+                            <span><i class="fas fa-exclamation-triangle"></i> Critical</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Burns Topic -->
+                <div class="topic-card" data-category="injuries wounds">
+                    <div class="card-image">
+                        <img src="images/fire.jpg" alt="Burns first aid">
+                        <div class="card-badge injuries">Injuries</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Burns Treatment</h3>
+                        <p>Proper care for thermal, chemical, and electrical burns</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1-3 minutes</span>
+                            <span><i class="fas fa-fire"></i> Thermal</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Choking Topic -->
+                <div class="topic-card" data-category="breathing emergency">
+                    <div class="card-image">
+                        <img src="images/Choking Rescue.jpg" alt="Choking first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choking Rescue</h3>
+                        <p>Heimlich maneuver and airway clearance techniques</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1-2 minutes</span>
+                            <span><i class="fas fa-lungs"></i> Airway</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bleeding Control Topic -->
+                <div class="topic-card" data-category="wounds emergency">
+                    <div class="card-image">
+                        <img src="images/Bleeding Control.jpg" alt="Bleeding control first aid">
+                        <div class="card-badge wounds">Wounds</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bleeding Control</h3>
+                        <p>Methods to stop bleeding and prevent shock</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 1-5 minutes</span>
+                            <span><i class="fas fa-tint"></i> Hemorrhage</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Nosebleed Topic -->
+                <div class="topic-card" data-category="wounds">
+                    <div class="card-image">
+                        <img src="images/Nosebleed Causes.jpg" alt="Nosebleed first aid">
+                        <div class="card-badge wounds">Wounds</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nosebleed Treatment</h3>
+                        <p>Simple steps to control and stop nosebleeds safely</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 5-10 minutes</span>
+                            <span><i class="fas fa-head-side-virus"></i> Nasal</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Snake Bites Topic -->
+                <div class="topic-card" data-category="emergency injuries">
+                    <div class="card-image">
+                        <img src="images/Snake Bite Response.jpg" alt="Snake bite first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Snake Bite Response</h3>
+                        <p>Critical steps for venomous and non-venomous snake bites</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> Immediate</span>
+                            <span><i class="fas fa-exclamation-circle"></i> Toxic</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Seizures Topic -->
+                <div class="topic-card" data-category="emergency">
+                    <div class="card-image">
+                        <img src="images/Seizure Management.jpg" alt="Seizure first aid">
+                        <div class="card-badge emergency">Emergency</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Seizure Management</h3>
+                        <p>How to safely assist someone having a seizure</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> During episode</span>
+                            <span><i class="fas fa-brain"></i> Neurological</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Fractures Topic -->
+                <div class="topic-card" data-category="injuries">
+                    <div class="card-image">
+                        <img src="images/Fracture Stabilization.jpg" alt="Fracture first aid">
+                        <div class="card-badge injuries">Injuries</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fracture Stabilization</h3>
+                        <p>Immobilization techniques for suspected broken bones</p>
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 5-10 minutes</span>
+                            <span><i class="fas fa-bone"></i> Skeletal</span>
+                        </div>
+                        <a href="topics.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No topics found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>AidFirst</span>
+                    </div>
+                    <p>Empowering communities with life-saving first aid knowledge and skills.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="topics.html">First Aid Topics</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <ul>
+                        <li><strong>Ghana:</strong> 193 (Ambulance)</li>
+                        <li><strong>Police:</strong> 191</li>
+                        <li><strong>Fire:</strong> 192</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AidFirst. All rights reserved. | Disclaimer: This website provides educational content only and is not a substitute for professional medical training.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
